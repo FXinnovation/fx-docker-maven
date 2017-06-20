@@ -1,8 +1,6 @@
 FROM maven:3.3-jdk-8
 
-ENV NPM_VERSION=1.4.21+ds-2 \
-    XVFB_VERSION=2.1.16.4-1 \
-    CHROMIUM_VERSION=57.0.2987.98-1~deb8u1
+ENV NPM_VERSION=1.4.21+ds-2
 
 ARG BUILD_DATE
 ARG VCS_REF
@@ -25,8 +23,6 @@ LABEL "maintainer"="cloudsquad@fxinnovation.com" \
       "org.label-schema.applications.maven.version"=$MAVEN_VERSION \
       "org.label-schema.applications.ca-certificates-java.version"=$CA_CERTIFICATES_JAVA_VERSION \
       "org.label-schema.applications.npm.version"=$NPM_VERSION \
-      "org.label-schema.applications.xvfb.version"=$XVFB_VERSION \
-      "org.label-schema.applications.chromium.version"=$CHROMIUM_VERSION \
       "org.label-schema.vcs-ref"=$VCS_REF \
       "org.label-schema.version"=$VERSION \
       "org.label-schema.build-date"=$BUILD_DATE \
