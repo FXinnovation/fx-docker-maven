@@ -1,0 +1,7 @@
+#!/bin/bash
+set -e -x
+
+# Installing npm
+apt-get update
+
+apt-get install npm -y
