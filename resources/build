@@ -4,4 +4,4 @@ set -e -x
 # Installing npm
 apt-get update
 
-apt-get install npm -y
+apt-get install npm xvfb chromium -y
